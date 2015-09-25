@@ -1,13 +1,13 @@
-Const APP_VERSION As String = "15.09.25"
+Const APP_VERSION As String = "25.03.28"
 
-#Include Once "andev/program.bi"
+#Include Once "inc/program.bi"
 #Include Once "file.bi"
 
 Dim file As String = Command(1)
 
 If file <> "" Then
 	If FileExists(file) = -1 Then
-		Print file & " => " & program.getVersion(file)
+		Print program.getVersion(file)
 	Else
 		Print file & " not found"
 	EndIf

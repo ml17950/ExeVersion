@@ -3,15 +3,17 @@ Version=3
 Description=ExeVersion
 Api=fb (FreeBASIC)
 [Make]
-Current=1
-1=Windows Console,fbc -s console
-Recompile=2
 Module=Module Build,fbc -c
+Recompile=2
+Current=1
+1=Windows Console x64,fbc64 -s console -s console
+2=Windows Console,fbc -s console
 [TabOrder]
 TabOrder=1
 [File]
 1=ExeVersion.bas
+2=ExeVersion.rc
 [BreakPoint]
 1=
 [FileInfo]
-1=0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1=0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
